@@ -7,14 +7,14 @@ export const MainPageCards: React.FC = () => {
     cards.push(
       <div className="card-row" key={i}>
         <div className="main-card">
-          <div className="main-card__lenta"></div>
-          <div className="main-card__line"></div>
-          <div className="main-card__title">Мои счета</div>
+          <div className="lenta"></div>
+          <div className="line"></div>
+          <div className="card_title">Мои счета</div>
         </div>
         <div className="main-card">
-          <div className="main-card__lenta"></div>
-          <div className="main-card__line"></div>
-          <div className="main-card__title">Шаблоны</div>
+          <div className="lenta"></div>
+          <div className="line"></div>
+          <div className="card_title">Шаблоны</div>
         </div>
       </div>
     );

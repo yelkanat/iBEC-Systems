@@ -1,0 +1,82 @@
+.nav-wrapper {
+  width: 100%;
+}
+.navbar-logo {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.navbar-main_block {
+  width: 90%;
+}
+
+.navbar-text {
+  text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.06);
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 87%;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-bottom: 10px;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-item {
+  position: relative;
+  padding: 0px 10px 0px 10px;
+}
+.nav-item:after {
+  content: "";
+  position: absolute;
+  background: white;
+  width: 1px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.navbar {
+  border: 1px solid;
+  border-color: lightgray;
+  -moz-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4),
+    inset -1px -1px 1px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4),
+    inset -1px -1px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4),
+    inset -1px -1px 1px rgba(0, 0, 0, 0.4);
+}
+.navbar-container {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+@media only screen and (max-width: 700px) {
+  .navbar-logo {
+    display: none;
+  }
+  .navbar-main_block {
+    width: 100%;
+  }
+  .main-card {
+    margin-right: 0px;
+  }
+}
